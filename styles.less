@@ -1,0 +1,66 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+@import "ui-variables";
+
+@background-color: #000;
+@line-numbers: #fff;
+@highlighted-line-numbers: #0c0;
+
+.tree-view {
+    background: @background-color !important;
+}
+
+atom-pane-container atom-pane .item-views .pane-item {
+    background-color: @background-color;
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+    background-color: @background-color;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+atom-text-editor::shadow {
+    .gutter {
+        background-color: lighten( @background-color, 5% );
+        
+        .line-number {
+            color: @line-numbers;
+
+            &.cursor-line {
+                color: @highlighted-line-numbers;
+            }
+
+            &.foldable .icon-right {
+                visibility: visible;
+            }
+        }
+    }
+
+    .line.cursor-line {
+        background-color: lighten( @background-color, 15% );
+    }
+
+    .selection .region {
+        background-color: lighten( @background-color, 15% );
+    }
+
+    // .variable,
+    // .entity.name.function {
+    //     color: @text-color;
+    // }
+}
