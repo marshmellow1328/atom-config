@@ -12,3 +12,4 @@ This repo is intended to document my atom preferences/config so I can easily pul
   4. jshint
   5. language-puppet
   6. linter
+  7. minimap
