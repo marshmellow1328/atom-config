@@ -4,7 +4,7 @@ This repo is intended to document my atom preferences/config so I can easily pul
 ## To Use
 1. Install seti-ui theme and select it
 2. Select One Dark syntax
-3. Copy styles.less
+3. Copy [styles.less](styles.less)
 4. Install packages
   1. atom-beautify
   2. atom-typescript
