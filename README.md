@@ -1,5 +1,5 @@
 # atom-config
-This repo is intended to document my atom preferences/config so I can easily pull them down on a new machine when needed.
+This repo is intended to document my [atom](https://atom.io/) preferences and config so I can easily pull them down on a new machine when needed.
 
 ## To Use
 1. Install seti-ui theme and select it
@@ -10,6 +10,7 @@ This repo is intended to document my atom preferences/config so I can easily pul
   2. atom-typescript
   3. git-plus
   4. language-puppet
+  5. less-than-slash
   6. linter
-  7. linter-jshint
+  7. linter-eslint
   8. minimap
